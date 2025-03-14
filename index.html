@@ -794,252 +794,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-container">
-                <div>
-                    <a href="#" class="logo">DESH<span>MAP</span></a>
-                    <p style="color: #94a3b8; margin: 1rem 0 1.5rem;">DeshMap is a 3D realistic mapping solution that helps resolve land boundary disputes in Bangladesh through precise GPS coordinates and advanced visualization.</p>
-                    <div class="footer-social">
-                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#problem" class="footer-link"><i class="fas fa-chevron-right"></i> Problem</a></li>
-                        <li><a href="#solution" class="footer-link"><i class="fas fa-chevron-right"></i> Solution</a></li>
-                        <li><a href="#product" class="footer-link"><i class="fas fa-chevron-right"></i> Product</a></li>
-                        <li><a href="#pricing" class="footer-link"><i class="fas fa-chevron-right"></i> Pricing</a></li>
-                        <li><a href="#team" class="footer-link"><i class="fas fa-chevron-right"></i> Team</a></li>
-                        <li><a href="#contact" class="footer-link"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Land Mapping</a></li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> 3D Visualization</a></li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Document Verification</a></li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> GPS Coordinates</a></li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Boundary Disputes</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Newsletter</h3>
-                    <p style="color: #94a3b8; margin-bottom: 1.5rem;">Subscribe to our newsletter to receive updates on our services, features, and promotions.</p>
-                    <form style="display: flex; margin-bottom: 1rem;">
-                        <input type="email" placeholder="Your Email Address" class="form-control" style="margin: 0; border-radius: 0.25rem 0 0 0.25rem;" required>
-                        <button type="submit" style="background: linear-gradient(45deg, var(--primary), var(--secondary)); color: white; border: none; border-radius: 0 0.25rem 0.25rem 0; padding: 0 1rem; cursor: pointer;"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 DeshMap. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
-
-    <!-- JavaScript -->
-    <script>
-        // Mobile Menu Toggle
-        const burger = document.querySelector('.burger');
-        const navList = document.querySelector('.nav-list');
-        
-        burger.addEventListener('click', () => {
-            burger.classList.toggle('active');
-            navList.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                burger.classList.remove('active');
-                navList.classList.remove('active');
-            });
-        });
-        
-        // Header Background Change on Scroll
-        const header = document.querySelector('.header');
-        const backToTop = document.querySelector('.back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-                backToTop.classList.add('active');
-            } else {
-                header.classList.remove('scrolled');
-                backToTop.classList.remove('active');
-            }
-        });
-        
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (!targetElement) return;
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Form Submission
-        const contactForm = document.getElementById('contactForm');
-        
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // In a real implementation, you would send the form data to your server
-            alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
-        });
-    </script>
-</body>
-</html>
-
-    <!-- Team Section -->
-    <section id="team" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Team</h2>
-                <p class="section-subtitle">Passionate professionals dedicated to solving land disputes</p>
-            </div>
-            <div class="team-container">
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="images/team/hamim.jpg.jpg" alt="Hamim Mahmud">
-                    </div>
-                    <div class="team-info">
-                        <h3 class="team-name">Hamim Mahmud</h3>
-                        <div class="team-role">Co-Founder & CEO</div>
-                        <p>Experience: Expertise in GPS, ML, Robotics, Intern at CAIR lab, Member of UIU MARS Rover Team</p>
-                        <div class="team-social">
-                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="images/team/towhid.jpg.jpg" alt="Towhidul Tamim">
-                    </div>
-                    <div class="team-info">
-                        <h3 class="team-name">Towhidul Tamim</h3>
-                        <div class="team-role">Co-Founder & CTO</div>
-                        <p>Experience: Front-End Developer, worked on projects and hackathons like NASA Space Apps Challenge</p>
-                        <div class="team-social">
-                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="images/team/abrar.jpg" alt="Abrar Shahariya">
-                    </div>
-                    <div class="team-info">
-                        <h3 class="team-name">Abrar Shahariya</h3>
-                        <div class="team-role">Co-Founder & COO</div>
-                        <p>Experience: Project Development, worked on projects and hackathons like NASA Space Apps Challenge</p>
-                        <div class="team-social">
-                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-subtitle">Get in touch with our team</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Phone</h4>
-                            <p>+880 1870755475</p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <a href="mailto:hamim.mahmud207@gmail.com">hamim.mahmud207@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Location</h4>
-                            <p>Dhaka, Bangladesh</p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Website</h4>
-                            <a href="https://claude.site/artifacts/f526e8ca-f44d-48a3-86df-ce75b43c420c" target="_blank">deshmap.com</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Your Message</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Problem Section -->
     <section id="problem" class="section">
         <div class="container">
@@ -1208,23 +962,271 @@
                             <i class="fas fa-check"></i> Map your land with mm level precision
                         </div>
                         <div class="pricing-feature">
-                            <i class="fas fa-check"></i> Premium 3D visualization
+
+                            <div class="pricing-feature">
+                                <i class="fas fa-check"></i> Premium 3D visualization
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check"></i> Unlimited data storage
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check"></i> 24/7 support
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check"></i> Document verification
+                            </div>
+                            <div class="pricing-feature">
+                                <i class="fas fa-check"></i> Land ownership history
+                            </div>
                         </div>
-                        <div class="pricing-feature">
-                            <i class="fas fa-check"></i> Unlimited data storage
-                        </div>
-                        <div class="pricing-feature">
-                            <i class="fas fa-check"></i> 24/7 support
-                        </div>
-                        <div class="pricing-feature">
-                            <i class="fas fa-check"></i> Document verification
-                        </div>
-                        <div class="pricing-feature">
-                            <i class="fas fa-check"></i> Land ownership history
-                        </div>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
                     </div>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <!-- Team Section -->
+        <section id="team" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Team</h2>
+                    <p class="section-subtitle">Passionate professionals dedicated to solving land disputes</p>
+                </div>
+                <div class="team-container">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="images/team/hamim.jpg.jpg" alt="Hamim Mahmud">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Hamim Mahmud</h3>
+                            <div class="team-role">Co-Founder & CEO</div>
+                            <p>Experience: Expertise in GPS, ML, Robotics, Intern at CAIR lab, Member of UIU MARS Rover Team</p>
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="images/team/towhid.jpg.jpg" alt="Towhidul Tamim">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Towhidul Tamim</h3>
+                            <div class="team-role">Co-Founder & CTO</div>
+                            <p>Experience: Front-End Developer, worked on projects and hackathons like NASA Space Apps Challenge</p>
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="images/team/abrar.jpg" alt="Abrar Shahariya">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Abrar Shahariya</h3>
+                            <div class="team-role">Co-Founder & COO</div>
+                            <p>Experience: Project Development, worked on projects and hackathons like NASA Space Apps Challenge</p>
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">Get in touch with our team</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+880 1870755475</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:hamim.mahmud207@gmail.com">hamim.mahmud207@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Website</h4>
+                                <a href="https://claude.site/artifacts/f526e8ca-f44d-48a3-86df-ce75b43c420c" target="_blank">deshmap.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div>
+                        <a href="#" class="logo">DESH<span>MAP</span></a>
+                        <p style="color: #94a3b8; margin: 1rem 0 1.5rem;">DeshMap is a 3D realistic mapping solution that helps resolve land boundary disputes in Bangladesh through precise GPS coordinates and advanced visualization.</p>
+                        <div class="footer-social">
+                            <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#problem" class="footer-link"><i class="fas fa-chevron-right"></i> Problem</a></li>
+                            <li><a href="#solution" class="footer-link"><i class="fas fa-chevron-right"></i> Solution</a></li>
+                            <li><a href="#product" class="footer-link"><i class="fas fa-chevron-right"></i> Product</a></li>
+                            <li><a href="#pricing" class="footer-link"><i class="fas fa-chevron-right"></i> Pricing</a></li>
+                            <li><a href="#team" class="footer-link"><i class="fas fa-chevron-right"></i> Team</a></li>
+                            <li><a href="#contact" class="footer-link"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer-heading">Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Land Mapping</a></li>
+                            <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> 3D Visualization</a></li>
+                            <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Document Verification</a></li>
+                            <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> GPS Coordinates</a></li>
+                            <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Boundary Disputes</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer-heading">Newsletter</h3>
+                        <p style="color: #94a3b8; margin-bottom: 1.5rem;">Subscribe to our newsletter to receive updates on our services, features, and promotions.</p>
+                        <form style="display: flex; margin-bottom: 1rem;">
+                            <input type="email" placeholder="Your Email Address" class="form-control" style="margin: 0; border-radius: 0.25rem 0 0 0.25rem;" required>
+                            <button type="submit" style="background: linear-gradient(45deg, var(--primary), var(--secondary)); color: white; border: none; border-radius: 0 0.25rem 0.25rem 0; padding: 0 1rem; cursor: pointer;"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 DeshMap. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Back to Top Button -->
+        <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    
+        <!-- JavaScript -->
+        <script>
+            // Mobile Menu Toggle
+            const burger = document.querySelector('.burger');
+            const navList = document.querySelector('.nav-list');
+            
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('active');
+                navList.classList.toggle('active');
+            });
+            
+            // Close mobile menu when clicking a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    burger.classList.remove('active');
+                    navList.classList.remove('active');
+                });
+            });
+            
+            // Header Background Change on Scroll
+            const header = document.querySelector('.header');
+            const backToTop = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                    backToTop.classList.add('active');
+                } else {
+                    header.classList.remove('scrolled');
+                    backToTop.classList.remove('active');
+                }
+            });
+            
+            // Smooth Scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (!targetElement) return;
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Form Submission
+            const contactForm = document.getElementById('contactForm');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // In a real implementation, you would send the form data to your server
+                alert('Thank you for your message! We will get back to you soon.');
+                contactForm.reset();
+            });
+        </script>
+    </body>
+    </html>
